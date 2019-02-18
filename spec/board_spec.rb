@@ -1,7 +1,7 @@
-require_relative "../lib/board"
+require_relative '../lib/board'
 
 describe Board do
-  it "gives correct position when making a single move" do
+  it 'gives correct position when making a single move' do
     board = Board.new
 
     board.make_move(0, :x)
@@ -11,7 +11,7 @@ describe Board do
     expect(board.current_position(:o)).to eq 1
   end
 
-  it "gives correct position when making multiple moves" do
+  it 'gives correct position when making multiple moves' do
     board = Board.new
 
     board.make_move(1, :x)
