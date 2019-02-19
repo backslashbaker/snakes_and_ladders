@@ -1,6 +1,6 @@
 class Board
-  def initialize
-    @positions = {}
+  def initialize(positions)
+    @positions = positions
   end
 
   def make_move(position, marker)
